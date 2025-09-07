@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cal">
+        <div class="calbox">
+            <div class="title">
+                My BMI Calculator
+            </div>
+            <br>
+            <div class="inp">
+                <div class="w">
+                    <label class="hg">Weight</label> <input id="weight" type="number">
+                </div>
+                <div class="h">
+                    <label class="hg">Height</label> <input  id="height" type="number">
+                </div>
+                <div class="a">
+                    <label class="hg">Age</label> <input id="age" type="number" step="1">
+                </div>
+                <div class="g">
+                    <label class="hg">Gender</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="b">
+                    <button id="calbtn">My BMI</button>
+                </div>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
