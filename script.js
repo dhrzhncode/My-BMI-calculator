@@ -9,7 +9,10 @@ document.getElementById("calbtn").addEventListener("click", function(){
     let input = [weight,height,age]
     let valid = true;
 
-    input.forEach(inp => inp.style.border = "2px solid green");
+    input.forEach(inp => {
+        inp.style.border = "2px solid green";
+        inp.style.backgroundColor = "rgba(64, 63, 117, 1)";;
+    });
 
     input.forEach(inp => {
         if (inp.value.trim() === ""){
